@@ -22,7 +22,8 @@ repositories {
 }
 
 ext {
-    testng_version = "6.14.3"
+    junit_version = "5.7.0"
+
     assertj_version = "3.17.2"
     selenium_version = "3.141.5"
     lombok_version = "1.16.20"
@@ -33,8 +34,9 @@ ext {
 
 dependencies {
     implementation(
+            "org.junit.jupiter:junit-jupiter-api:${junit_version}",
+            "org.junit.jupiter:junit-jupiter-engine:${junit_version}",
             "org.assertj:assertj-core:${assertj_version}",
-            "org.testng:testng:${testng_version}",
 
             "org.seleniumhq.selenium:selenium-java:${selenium_version}",
             "org.projectlombok:lombok:${lombok_version}",
@@ -43,6 +45,9 @@ dependencies {
             "org.apache.logging.log4j:log4j-core:${log4j_core_version}",
             "org.slf4j:slf4j-jdk14:${slf4j_jdk14_version}"
     )
+    implementation 'org.jetbrains:annotations:19.0.0'
+    implementation 'org.jetbrains:annotations:19.0.0'
+
 }
 
 allure {
@@ -53,5 +58,5 @@ allure {
 }
 
 tasks.test {
-    useTestNG()
+    useJUnitPlatform()
 }

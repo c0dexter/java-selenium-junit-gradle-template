@@ -2,9 +2,10 @@ package tests;
 
 import driver.manager.DriverManager;
 import driver.manager.DriverUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+
 import page.objects.BasePage;
 
 import static navigation.ApplicationUrls.APPLICATION_URL;
@@ -13,14 +14,14 @@ public class TestBase extends BasePage {
 
     protected WebDriver driver;
 
-    @BeforeMethod
+    @BeforeEach
     public void beforeTest() {
         driver = DriverManager.getWebDriver();
         DriverUtils.setInitialConfiguration();
         DriverUtils.navigateToPage(APPLICATION_URL);
     }
 
-    @AfterMethod
+    @AfterEach
     public void afterTest() {
         DriverManager.disposeDriver();
     }
