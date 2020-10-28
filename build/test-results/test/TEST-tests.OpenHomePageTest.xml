@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.OpenHomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-28T22:58:46" hostname="c0dexter-HP-EliteBook-8540w" time="6.178">
+<testsuite name="tests.OpenHomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-28T23:13:36" hostname="c0dexter-HP-EliteBook-8540w" time="6.982">
   <properties/>
-  <testcase name="openHomePage()" classname="tests.OpenHomePageTest" time="6.178"/>
-  <system-out><![CDATA[[INFO ] 2020-10-28 23:58:52.561 [Test worker] page.objects.LandingPage - Clicked on the header logo
-[INFO ] 2020-10-28 23:58:52.593 [Test worker] generic.assertions.AssertWebElement - Checking if element is displayed
-[INFO ] 2020-10-28 23:58:52.729 [Test worker] generic.assertions.AssertWebElement - WebElement was displayed!
+  <testcase name="openHomePage()" classname="tests.OpenHomePageTest" time="6.982"/>
+  <system-out><![CDATA[[INFO ] 2020-10-29 00:13:43.659 [Test worker] page.objects.LandingPage - Clicked on the header logo
+[INFO ] 2020-10-29 00:13:43.696 [Test worker] generic.assertions.AssertWebElement - Checking if element is displayed
+[INFO ] 2020-10-29 00:13:43.827 [Test worker] generic.assertions.AssertWebElement - WebElement was displayed!
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 28544
+  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 25124
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-paź 28, 2020 11:58:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+paź 29, 2020 12:13:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
